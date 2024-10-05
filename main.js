@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const startBtn = document.querySelector(".start_btn");
   const exClaim = document.querySelector(".ex_claim");
   const initialClaim = 0.0; // Giá trị khởi đầu của EXG
-  const earningRate = 1250 / 3600; // Mỗi giây cộng dồn
+  const earningRate = 10 / 3600; // Mỗi giây cộng dồn
   let totalClaim = initialClaim;
 
   function startCountdown(endTime) {
