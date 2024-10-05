@@ -13,7 +13,7 @@ html {
   --ylClr: #eda903;
 }
 body {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: sans-serif;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@ body {
   background-color: black;
   color: white;
   width: 100%;
-  max-width: 500px;
+  max-width: 420px;
   height: 100vh;
   position: relative;
   scroll-snap-type: x mandatory;
@@ -54,7 +54,7 @@ body {
 .ex_home {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 0rem;
 }
 .ex_home_header {
   display: flex;
@@ -62,14 +62,14 @@ body {
   align-items: center;
 }
 .ex_home_header > div > b.pro {
-  font-size: 1rem;
+  font-size: 0.8rem;
   background-color: var(--ylClr);
   color: black;
   padding: 5px 10px;
   border-radius: 10px;
 }
 .ex_home_header > div > b.normal {
-  font-size: 1rem;
+  font-size: 0.8rem;
   background-color: var(--textClr);
   color: black;
   padding: 5px 10px;
@@ -82,7 +82,7 @@ body {
   gap: 1rem;
 }
 .ex_home_header > div > span {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: var(--textClr);
 }
@@ -101,7 +101,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 3rem 2rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
   border-radius: 10px;
 }
 .ex_ponits > i {
@@ -109,7 +110,7 @@ body {
   font-size: 2.2rem;
 }
 .ex_ponits > span {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: var(--textClr);
 }
@@ -125,13 +126,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: -1rem;
 }
 .ex_btns p {
   background-color: var(--ylClr);
   text-align: center;
   color: black;
-  padding: 1.5rem;
-  font-size: 2rem;
+  padding: 1.2rem;
+  font-size: 1.5rem;
   border-radius: 10px;
   font-weight: bold;
 }
@@ -184,7 +186,7 @@ body {
 }
 
 .ex_btns > span {
-  margin-top: 3rem;
+  margin-top: 1rem;
   color: var(--textClr);
   display: flex;
   justify-content: space-between;
@@ -196,7 +198,7 @@ body {
 .ex_btns > a {
   display: flex;
   justify-content: space-between;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #8f8f8f;
 }
@@ -228,12 +230,13 @@ body {
 .ex_shop {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
   color: var(--textClr);
 }
 .ex_box > div > h2 {
   text-align: center;
   color: var(--textClr);
+  font-size: 1.8rem;
 }
 .ex_box > div > h2 > i {
   color: var(--ylClr);
@@ -261,7 +264,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .ex_shop > div > ul > li > span:nth-child(1) {
   display: inline-block;
@@ -278,16 +281,16 @@ body {
   background-color: #333333c2;
   display: block;
   width: 100%;
-  padding: 1rem;
+  padding: 5px;
   color: var(--textClr);
   text-align: center;
   margin-top: 2rem;
   font-weight: bold;
   border-radius: 10px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 .ex_shop > div > a img {
-  width: 18px;
+  width: 15px;
   transform: translateY(2px);
 }
 .alert {
@@ -304,12 +307,12 @@ body {
   color: var(--textClr);
 }
 .ex_task ul li a {
-  padding: 2rem;
+  padding: 1.5rem;
   background: #ffffff0e;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .ex_task ul li i {
   color: var(--ylClr);
@@ -324,13 +327,14 @@ body {
   margin-top: 3rem;
   font-weight: bold;
   color: var(--textClr);
+  font-size: 1.2rem;
 }
 .ex_box > div > a > i {
   color: var(--ylClr);
 }
 
 .ex_task > p {
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 10px;
   width: 100%;
   text-align: center;
@@ -338,7 +342,7 @@ body {
   background-color: var(--ylClr);
   margin-top: 2rem;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   opacity: 0.5;
 }
 .ex_ref {
@@ -367,13 +371,14 @@ body {
 .ex_ref_list {
   margin-top: 2rem;
   display: block;
+  font-size: 1rem;
 }
 .ex_ref ul {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   height: 25vh;
   overflow-y: scroll;
 }
@@ -381,19 +386,24 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: disc;
+  font-size: 1rem;
+  padding: 5px;
 }
 .ex_ref ul li i {
   color: var(--ylClr);
 }
 .ex_ref_more {
-  padding: 1.5rem;
+  padding: 1.2rem;
   margin-top: 5rem;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   border: 2px solid var(--ylClr);
   color: var(--ylClr);
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
+}
+.ref_title {
+  font-size: 1rem;
 }
 .mining {
   background: #ffffff0e !important;
