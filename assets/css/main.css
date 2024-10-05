@@ -48,14 +48,14 @@ body {
 .ex_box > div {
   padding: 3rem;
   width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
+  height: 85vh;
+  overflow-y: auto;
   scroll-snap-align: start;
 }
 .ex_ref_info {
   padding: 0.5rem;
   opacity: 0.7;
-  margin: 1rem 0;
+  margin: 5px 0;
 }
 .ex_ref_info li {
   justify-content: flex-start !important;
@@ -82,7 +82,7 @@ body {
   font-size: 0.8rem;
   background-color: var(--textClr);
   color: black;
-  padding: 5px 10px;
+  padding: 2px 8px;
   border-radius: 10px;
 }
 .ex_home_header > div {
@@ -111,7 +111,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 2rem;
   margin-top: 2rem;
   border-radius: 10px;
 }
@@ -257,8 +257,21 @@ body {
   border-radius: 10px;
   background-color: #ffffff0e;
 }
+.start_btn {
+  position: relative;
+  overflow: hidden;
+}
+.start_btn + span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #edab0325;
+  width: 100%;
+  z-index: 9;
+  height: 100%;
+}
 .ex_shop > div > p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   background-color: var(--ylClr);
   width: max-content;
   padding: 2px 10px;
@@ -291,12 +304,12 @@ body {
   background-color: #333333c2;
   display: block;
   width: 100%;
-  padding: 5px;
+  padding: 8px;
   color: var(--textClr);
   text-align: center;
   margin-top: 2rem;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1.5rem;
 }
 .ex_shop > div > a img {
@@ -399,7 +412,7 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
-  padding: 1rem 0;
+  padding: 8px 0;
 }
 .ex_ref ul li i {
   color: var(--ylClr);
