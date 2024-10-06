@@ -118,14 +118,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelectorAll(".ex_navs > ul >li");
   const pages = document.querySelectorAll(".ex_box > div");
   const rankBtn = document.querySelector(".ex_rank_btn");
+  const ex_how = document.querySelector(".ex_how");
   const profileBtn = document.querySelector(".ex_profile_btn");
   rankBtn.addEventListener("click", () => {
     pages[5].scrollIntoView({
       block: "start",
     });
   });
-  profileBtn.addEventListener("click", () => {
+  ex_how.addEventListener("click", () => {
     pages[6].scrollIntoView({
+      block: "start",
+    });
+  });
+  profileBtn.addEventListener("click", () => {
+    pages[4].scrollIntoView({
       block: "start",
     });
   });
