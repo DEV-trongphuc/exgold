@@ -121,19 +121,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const ex_how = document.querySelector(".ex_how");
   const profileBtn = document.querySelector(".ex_profile_btn");
   rankBtn.addEventListener("click", () => {
-    pages[5].scrollIntoView({
-      block: "start",
-    });
+    pages[5].scrollIntoView();
   });
   ex_how.addEventListener("click", () => {
-    pages[6].scrollIntoView({
-      block: "start",
-    });
+    pages[6].scrollIntoView();
   });
   profileBtn.addEventListener("click", () => {
-    pages[4].scrollIntoView({
-      block: "start",
-    });
+    pages[4].scrollIntoView();
   });
   menu.forEach((item, index) => {
     item.addEventListener("click", () => {
