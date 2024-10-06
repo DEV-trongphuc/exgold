@@ -11,9 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const earningRate = 10 / 3600; // Mỗi giây cộng dồn
   const initialClaim = earningRate; // Giá trị khởi đầu của EXG
   let totalClaim = initialClaim;
+  let countdown;
   function startCountdown(endTime) {
+    clearInterval(countdown);
     startBtn.classList.add("mining");
-    const countdown = setInterval(() => {
+    countdown = setInterval(() => {
       const now = new Date();
       const timeLeft = endTime - now;
       if (timeLeft <= 0) {
@@ -29,10 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       } else {
         startBtn.innerText = formatTimeLeft(endTime);
-        // Tính toán tổng số EXG dựa trên thời gian đã trôi qua
         const elapsedSeconds = Math.floor(
           (24 * 60 * 60 * 1000 - timeLeft) / 1000
-        ); // Tổng số giây đã trôi qua
+        );
         totalClaim = initialClaim + elapsedSeconds * earningRate; // Cập nhật totalClaim
         updateExClaim(); // Cập nhật số tiền EXG mỗi giây
       }
@@ -77,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   startBtn.addEventListener("click", function () {
-    const endTime = new Date(Date.now() + 1 * 10 * 1000); // Thời gian kết thúc sau 24 giờ
+    const endTime = new Date(Date.now() + 24 * 60 * 60 * 1000); // Thời gian kết thúc sau 24 giờ
     localStorage.setItem("endTime", endTime); // Lưu endTime vào localStorage
     startCountdown(endTime);
   });
@@ -91,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
       startCountdown(endTime); // Bắt đầu đếm ngược nếu còn thời gian
     } else {
       totalClaim = initialClaim * 24 * 60 * 60;
+
       updateExClaim(); // Cập nhật số tiền EXG mỗi giây
       localStorage.removeItem("endTime"); // Xóa thời gian khi đếm ngược xong
       localStorage.setItem("claim", "1"); // Xóa thời gian khi đếm ngược xong
@@ -115,6 +117,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   const menu = document.querySelectorAll(".ex_navs > ul >li");
   const pages = document.querySelectorAll(".ex_box > div");
+  const rankBtn = document.querySelector(".ex_rank_btn");
+  const profileBtn = document.querySelector(".ex_profile_btn");
+  rankBtn.addEventListener("click", () => {
+    pages[5].scrollIntoView({
+      block: "start",
+    });
+  });
+  profileBtn.addEventListener("click", () => {
+    pages[6].scrollIntoView({
+      block: "start",
+    });
+  });
   menu.forEach((item, index) => {
     item.addEventListener("click", () => {
       pages[index].scrollIntoView({
