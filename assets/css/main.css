@@ -5,6 +5,9 @@
   list-style: none;
   text-decoration: none;
 }
+a[href] {
+  color: unset;
+}
 html {
   font-size: 62.5%;
 }
