@@ -43,8 +43,46 @@ body {
   width: 100%;
   opacity: 1;
 }
+#ex_usdt_a i {
+  color: var(--ylClr);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+#ex_usdt_a h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+}
+#ex_usdt_a > div {
+  padding: 1rem;
+  background-color: #ffffff0e;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--textClr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ex_usdt_a > div > p:first-child > span:first-child {
+  color: var(--ylClr);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+#ex_usdt_a > div > p:first-child {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+#ex_usdt_a > div > p:last-child {
+  color: var(--ylClr);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
 .ex_box {
-  width: 1100%;
+  width: 1400%;
   display: flex;
 }
 .ex_how_start {
@@ -209,7 +247,7 @@ body {
 
 .progress-striped .progress-bar {
   background-color: #fcbc51;
-  width: 99%;
+  width: 97%;
   background-image: linear-gradient(
     45deg,
     rgb(237, 169, 3) 25%,
@@ -919,4 +957,51 @@ body {
 .claim_tasks.active {
   pointer-events: all;
   opacity: 1;
+}
+.ex_swapbl {
+  background-color: #ffffff0e;
+  margin-top: 2rem;
+  border-radius: 5px;
+  padding: 1.5rem;
+  color: var(--textClr);
+}
+.ex_swapbl > span {
+  font-size: 1rem;
+}
+.ex_swapbl > p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.ex_swapbl > p > i {
+  color: var(--ylClr);
+}
+.ex_swapip {
+  outline: none;
+  margin-top: 1rem;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 100%;
+  background: black;
+  color: white;
+  border: 1px solid #75757546;
+}
+.ex_line {
+  margin-top: 2rem;
+  display: block;
+  color: var(--textClr);
+  font-size: 1.2rem;
+}
+.ex_swap_done {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  font-weight: bold;
+  color: black;
+  border-radius: 5px;
+  background: var(--ylClr);
+  text-align: center;
+}
+.ex_swapbl img {
+  width: 15px;
+  transform: translateY(2px);
 }
